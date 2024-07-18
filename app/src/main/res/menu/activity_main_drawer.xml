@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_buy_toy"
+            android:icon="@drawable/basket"
+            android:title="@string/buy_toy_command"
+            android:visible="false"/>
+        <item
+            android:id="@+id/nav_add_toy"
+            android:icon="@android:drawable/ic_input_add"
+            android:title="@string/add_toy_admin"
+            android:visible="false"/>
+        <item
+            android:id="@+id/nav_support"
+            android:icon="@drawable/support"
+            android:title="@string/support"
+            android:visible="false"/>
+        <item
+            android:id="@+id/nav_print_toy"
+            android:icon="@drawable/list"
+            android:title="@string/print_toy_command"
+            android:visible="false"/>
+        <item
+            android:id="@+id/nav_exit"
+            android:icon="@drawable/log_out_icon"
+            android:title="@string/access"
+            android:visible="false"/>
+    </group>
+</menu>

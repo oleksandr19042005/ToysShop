@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">ToysShop</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="nav_support">Support</string>
+    <string name="action_settings">Settings</string>
+    <string name="nav_exit">Exit</string>
+    <string name="nav_print_toy">Toys</string>
+    <string name="nav_buy_toy">Buy Toys</string>
+    <string name="nav_add_toy">Add Toy</string>
+
+
+    <string name="access">Exit</string>
+    <string name="add_toy_admin">Add toy</string>
+    <string name="print_toy_command">All toys</string>
+    <string name="buy_toy_command">Buy toys</string>
+    <string name="support">Support</string>
+    <string name="msg_support">We apologize for any difficulties you are experiencing. If you have any questions, problems or need help, please do not hesitate to contact our support team.</string>
+
+    <string-array name="type_toys">
+        <item>--Please choose an type--</item>
+        <item>PLASTIC</item>
+        <item>RUBBER</item>
+        <item>IRON</item>
+    </string-array>
+
+    <string-array name="Age_group_toys">
+        <item>--Please choose an age group--</item>
+        <item>3</item>
+        <item>6</item>
+        <item>10</item>
+        <item>14</item>
+    </string-array>
+
+    <string-array name="size_toys">
+        <item>--Please choose an size--</item>
+        <item>SMALL</item>
+        <item>MEDIUM</item>
+        <item>LARGE</item>
+    </string-array>
+
+    <string-array name="characteristic_toys">
+        <item>--Click for sort--</item>
+        <item>Name</item>
+        <item>Material</item>
+        <item>Age for use</item>
+        <item>Size</item>
+        <item>Price</item>
+    </string-array>
+</resources>

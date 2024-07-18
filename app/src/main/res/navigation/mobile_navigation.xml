@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_add_toy">
+
+    <fragment
+        android:id="@+id/nav_buy_toy"
+        android:name="com.example.toysshop.ui.buy_toy.BuyToyFragment"
+        android:label="@string/nav_buy_toy"
+        tools:layout="@layout/fragment_buy_toy" />
+    <fragment
+        android:id="@+id/nav_exit"
+        android:name="com.example.toysshop.ui.exit.ExitFragment"
+        android:label="@string/nav_exit"
+        tools:layout="@layout/fragment_exit" />
+    <fragment
+        android:id="@+id/nav_support"
+        android:name="com.example.toysshop.ui.support.SupportFragment"
+        android:label="@string/support"
+        tools:layout="@layout/fragment_support" />
+    <fragment
+        android:id="@+id/nav_add_toy"
+        android:name="com.example.toysshop.ui.add_toy.AddToyFragment"
+        android:label="@string/add_toy_admin"
+        tools:layout="@layout/fragment_add_toy" />
+    <fragment
+        android:id="@+id/nav_print_toy"
+        android:name="com.example.toysshop.ui.printtoy.PrintToyFragment"
+        android:label="@string/print_toy_command"
+        tools:layout="@layout/fragment_print_toy" />
+
+</navigation>

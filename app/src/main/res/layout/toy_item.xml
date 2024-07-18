@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="420dp"
+    android:layout_height="180dp"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/backgroundToyItem"
+        android:layout_width="386dp"
+        android:layout_height="145dp"
+        android:background="@drawable/border"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="177dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/black"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/ageForUse"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/material"
+        android:layout_width="174dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/ageForUse"
+        app:layout_constraintTop_toBottomOf="@+id/ageForUse" />
+
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="101dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="12dp"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/material"
+        app:layout_constraintTop_toTopOf="@+id/material" />
+
+    <TextView
+        android:id="@+id/ageForUse"
+        android:layout_width="174dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="196dp"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.127" />
+
+    <TextView
+        android:id="@+id/size"
+        android:layout_width="174dp"
+        android:layout_height="26dp"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/price"
+        app:layout_constraintEnd_toEndOf="@+id/name"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="174dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="56dp"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/size"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/size"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/black"
+        android:text="Delete"
+        android:textSize="19dp"
+        app:layout_constraintStart_toStartOf="@+id/material"
+        app:layout_constraintTop_toBottomOf="@+id/material" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

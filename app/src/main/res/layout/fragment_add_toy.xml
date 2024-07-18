@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.add_toy.AddToyFragment">
+
+    <View
+        android:id="@+id/backgroundAddToy"
+        android:layout_width="373dp"
+        android:layout_height="593dp"
+        android:layout_marginTop="88dp"
+        android:background="@drawable/border"
+        android:backgroundTint="@color/teal_700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/backgroundInputToyname"
+        android:layout_width="310dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="136dp"
+        android:background="@drawable/border"
+        app:layout_constraintStart_toStartOf="@+id/backgroundChooseType"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/inputToyName"
+        android:layout_width="262dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="152dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/backgroundInputToyname"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/backgroundChooseType"
+        android:layout_width="310dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="24dp"
+
+        android:background="@drawable/border"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputToyName" />
+
+    <TextView
+        android:id="@+id/textAboutType"
+        android:layout_width="131dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="32dp"
+        android:text="Choose the type:"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/inputToyName"
+        app:layout_constraintHorizontal_bias="0.028"
+        app:layout_constraintStart_toStartOf="@+id/inputToyName"
+        app:layout_constraintTop_toBottomOf="@+id/inputToyName" />
+
+    <Spinner
+        android:id="@+id/spinnerForType"
+        android:layout_width="133dp"
+        android:layout_height="50dp"
+        android:entries="@array/type_toys"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundAddToy"
+        app:layout_constraintHorizontal_bias="0.016"
+        app:layout_constraintStart_toEndOf="@+id/textAboutType"
+        app:layout_constraintTop_toTopOf="@+id/textAboutType" />
+
+    <TextView
+        android:id="@+id/backgroundChooseAge"
+        android:layout_width="310dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/border"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundChooseType"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/backgroundChooseType"
+        app:layout_constraintTop_toBottomOf="@+id/backgroundChooseType" />
+
+    <TextView
+        android:id="@+id/textAboutAge"
+        android:layout_width="133dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="72dp"
+        android:text="Choose the age group:"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/textAboutType"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textAboutType"
+        app:layout_constraintTop_toBottomOf="@+id/textAboutType" />
+
+    <Spinner
+        android:id="@+id/spinnerForAge"
+        android:layout_width="133dp"
+        android:layout_height="51dp"
+        android:entries="@array/Age_group_toys"
+
+        app:layout_constraintEnd_toEndOf="@+id/backgroundAddToy"
+        app:layout_constraintHorizontal_bias="0.016"
+        app:layout_constraintStart_toEndOf="@+id/textAboutAge"
+        app:layout_constraintTop_toTopOf="@+id/textAboutAge" />
+
+    <TextView
+        android:id="@+id/backgroundChooseSize"
+        android:layout_width="310dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/border"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundChooseAge"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/backgroundChooseAge"
+        app:layout_constraintTop_toBottomOf="@+id/backgroundChooseAge" />
+
+
+    <TextView
+        android:id="@+id/textAboutSize"
+        android:layout_width="121dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="56dp"
+        android:entries="@array/Age_group_toys"
+        android:text="Choose the size:"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/textAboutAge"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textAboutAge"
+        app:layout_constraintTop_toBottomOf="@+id/textAboutAge" />
+
+    <Spinner
+        android:id="@+id/spinnerForSize"
+        android:layout_width="133dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="12dp"
+        android:entries="@array/size_toys"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundAddToy"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toEndOf="@+id/textAboutSize"
+        app:layout_constraintTop_toTopOf="@+id/textAboutSize" />
+
+    <TextView
+        android:id="@+id/backgroundInputToyPrice"
+        android:layout_width="310dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/border"
+        app:layout_constraintStart_toStartOf="@+id/backgroundChooseSize"
+        app:layout_constraintTop_toBottomOf="@+id/backgroundChooseSize" />
+
+    <EditText
+        android:id="@+id/inputToyPrice"
+        android:layout_width="262dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="Price"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/backgroundInputToyPrice"
+        app:layout_constraintTop_toBottomOf="@+id/backgroundChooseSize" />
+
+    <Button
+        android:id="@+id/buttonAddToy"
+        android:layout_width="128dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="116dp"
+        android:backgroundTint="@color/black"
+        android:text="Add Toy"
+        app:layout_constraintStart_toEndOf="@+id/btnClearInfAboutToy"
+        app:layout_constraintTop_toBottomOf="@+id/backgroundChooseSize" />
+
+    <Button
+        android:id="@+id/btnClearInfAboutToy"
+        android:layout_width="128dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="12dp"
+        android:backgroundTint="@color/black"
+        android:text="Clear"
+        app:layout_constraintEnd_toEndOf="@+id/textAboutSize"
+        app:layout_constraintTop_toBottomOf="@+id/textAboutSize" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
